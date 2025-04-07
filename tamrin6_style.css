@@ -63,8 +63,8 @@ body {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	height:20px;
-	width:70px;
+	height:16%px;
+	width:10%px;
 	font-size: 10px;
 	border: solid black 1px;
 	margin: 10px;
