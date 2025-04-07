@@ -55,7 +55,7 @@ body {
 	justify-content: space-around;
 	padding:20px;
 	margin: 20px;
-	color: black;
+	color: white;
 	
 }
 
@@ -65,10 +65,10 @@ body {
 	justify-content: space-around;
 	height:20px;
 	width:70px;
+	font-size: 10px;
 	border: solid black 1px;
 	margin: 10px;
 	padding: 10px;
 	align-items: center;
-	color: red;
 
 }
