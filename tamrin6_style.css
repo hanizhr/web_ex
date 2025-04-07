@@ -6,7 +6,7 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100dp;
+/*             height: 100dp; */
             background-color: #f0f0f0;
 	    font-family: f;		
 			
@@ -23,8 +23,8 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	padding:20px;
-	margin: 20px;
+	padding:2px;
+	margin: 2px;
 	color: white;
 	
 }
@@ -53,8 +53,8 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	padding:20px;
-	margin: 20px;
+	padding:2px;
+	margin: 2px;
 	color: white;
 	
 }
