@@ -1,9 +1,14 @@
+@font-face{
+	font-family: "f";
+	src: url(https://fonts.google.com/share?selection.family=Edu+AU+VIC+WA+NT+Hand:wght@400..700|Oswald:wght@200..700|Pacifico|Schibsted+Grotesk:ital,wght@0,400..900;1,400..900|Shadows+Into+Light|Vazirmatn:wght@100..900);
+}
 body {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100dp;
             background-color: #f0f0f0;
+	    font-family: "f";		
 			
         }
 #schedule {
