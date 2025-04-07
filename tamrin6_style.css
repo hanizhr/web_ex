@@ -26,6 +26,7 @@ body {
 	padding:2px;
 	margin: 2px;
 	color: white;
+	font-size:400%;
 	
 }
 .d1{
@@ -56,6 +57,7 @@ body {
 	padding:2px;
 	margin: 2px;
 	color: white;
+	font-size:200%;
 	
 }
 
@@ -63,8 +65,8 @@ body {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	height:16%px;
-	width:10%px;
+	height:10%px;
+	width:8%px;
 	font-size: 10px;
 	border: solid black 1px;
 	margin: 10px;
