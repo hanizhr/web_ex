@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+h1 {
+  margin: 10px;
+  color: #fff;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1px;
+  width: 95vw;
+  height: 85vh;
+}
+
+.cell {
+  background-color: rgba(255, 255, 255, 0.85);
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  border-radius: 8px;
+}
+
+.cell:hover {
+  background-color: rgba(200, 200, 200, 0.85);
+}
+
+#status {
+  margin-top: 10px;
+  color: #fff;
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.background-controls {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+}
+
+.background-controls button {
+  margin: 5px;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  border: none;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+}
+
+@media (max-height: 500px) {
+  .board {
+    width: 90vw;
+    height: 80vh;
+  }
+
+  .cell {
+    font-size: 5vmin;
+  }
+}
