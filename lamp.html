@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lamp</title>
+  <style>
+    body {
+      background-color: #222;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    #lamp {
+      width: 100px;
+      height: 150px;
+    }
+
+    .big {
+      transform: scale(2);
+    }
+  </style>
+</head>
+<body>
+  <img id="lamp" src="lamp-off.png" alt="Lamp">
+
+  <script>
+    const lamp = document.getElementById('lamp');
+    let isOn = false;
+
+    lamp.addEventListener('mouseenter', () => {
+      lamp.src = "lamp-on.png";
+      isOn = true;
+    });
+
+    lamp.addEventListener('mouseleave', () => {
+      lamp.src = "lamp-off.png";
+      isOn = false;
+    });
+
+    lamp.addEventListener('dblclick', () => {
+      lamp.classList.toggle('big');
+    });
+
+    lamp.addEventListener('mousedown', (e) => {
+      if (e.button === 2) {
+        e.preventDefault();
+        const width = prompt("Enter new width (px):", lamp.width);
+        const height = prompt("Enter new height (px):", lamp.height);
+        if (width && height) {
+          lamp.style.width = width + 'px';
+          lamp.style.height = height + 'px';
+        }
+      }
+    });
+
+    lamp.addEventListener('contextmenu', e => e.preventDefault());
+  </script>
+</body>
+</html>
