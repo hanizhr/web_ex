@@ -1,7 +1,7 @@
 const boardElement = document.getElementById("board");
 const statusElement = document.getElementById("status");
 
-let currentPlayer = "A";
+let currentPlayer = "d";
 let board = Array(9).fill("");
 
 function createBoard() {
@@ -18,7 +18,7 @@ function createBoard() {
 function handleClick(index) {
   if (board[index] !== "" || checkWinner()) return;
   board[index] = currentPlayer;
-  currentPlayer = currentPlayer === "A" ? "B" : "A";
+  currentPlayer = currentPlayer === "d" ? "B" : "d";
   updateBoard();
 }
 
